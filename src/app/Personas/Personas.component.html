@@ -3,7 +3,7 @@
         <div class="col">
             <h1>Listado de personas</h1>
             <button class="btn btn-primary" [disabled]='deshabilitar' (click)="agregarPersona()">Agregar Persona </button>
-            <p>{{mensaje}}</p>
+            <p *ngIf="mostrar">{{mensaje}} Con el titulo {{titulo}}</p>
             <app-persona></app-persona>
 
             <label>Titulo Persona</label>
