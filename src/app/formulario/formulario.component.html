@@ -1,0 +1,12 @@
+<form>
+    <div class="form-group">
+      <label for="">Ingresa un valor</label>
+      <input type="number" class="form-control" placeholder="Escribe un numero" [(ngModel)]="valor1" name="valor1"/>
+
+    </div>
+    <div class="form-group">
+        <label for="">Ingresa otro valor</label>
+        <input type="number" class="form-control" placeholder="Escribe otro numero" [(ngModel)]="valor2" name="valor2"/>
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="sumar()">Consultar Resultado </button>
+</form>
